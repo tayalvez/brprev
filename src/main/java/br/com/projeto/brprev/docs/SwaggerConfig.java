@@ -21,7 +21,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                     .apis(RequestHandlerSelectors.basePackage("br.com.projeto.brprev.controllers"))
-                    .paths(regex("/v1/clients.*"))
+                    .paths(regex("/.*"))
                     .build()
                 .apiInfo(metaData());
     }

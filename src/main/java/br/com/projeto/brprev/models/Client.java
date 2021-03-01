@@ -15,11 +15,17 @@ public class Client extends AbstractEntity{
     @NotEmpty
     private String cpf;
     @NotEmpty
-    @Email
     private String email;
     private String adress;
     private String cep;
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     public String getCpf() {
         return cpf;
